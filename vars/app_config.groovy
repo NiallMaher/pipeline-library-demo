@@ -1,6 +1,4 @@
-src/var/app_config.groovy
 #!/usr/bin/groovy
-package src.var;
 
 def bob(opt) {
  sh "docker run --rm " +
