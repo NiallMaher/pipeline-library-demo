@@ -1,6 +1,6 @@
 #!/usr/bin/env groovy
 
-def bob(String operation = 'name') {
+def bob() {
   "docker run --rm " +
                 '--env APP_PATH="`pwd`" ' +
                 '--env RELEASE=${RELEASE} ' +
