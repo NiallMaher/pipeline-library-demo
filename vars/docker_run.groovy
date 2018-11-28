@@ -28,7 +28,7 @@ def git_cmd(operation){
 sh "docker run --rm -v ${env.WORKSPACE}:/git alpine/git ${operation}"
 }
 
-def HELM_CMD(operation){
+def helm_cmd(operation){
 sh "docker run --rm " +
         "-v ${env.WORKSPACE}/.kube/config:/root/.kube/config " +
         "-v ${env.WORKSPACE}/helm-home:/root/.helm " +
@@ -36,7 +36,7 @@ sh "docker run --rm " +
 }
 
 
-def KUBE_CMD(operation){
+def kube_cmd(operation){
 sh "docker run --rm " +
         "-v ${env.WORKSPACE}/.kube/config:/config/.kube/config " +
         "-v ${env.WORKSPACE}:${env.WORKSPACE} " +
