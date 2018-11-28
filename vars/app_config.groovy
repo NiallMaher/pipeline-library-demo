@@ -1,4 +1,5 @@
 #!/usr/bin/groovy
+package com.cleverbuilder
 
 def bob(opt) {
  sh "docker run --rm " +
