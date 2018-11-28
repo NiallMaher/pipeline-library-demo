@@ -24,7 +24,7 @@ sh "docker run -u root --rm " +
         "armdocker.rnd.ericsson.se/proj-orchestration-so/eai_unified_installer:${eaiVersion}"
 }
 
-def GIT_CMD(operation){
+def git_cmd(operation){
 sh "docker run --rm -v ${env.WORKSPACE}:/git alpine/git ${operation}"
 }
 
