@@ -1,7 +1,8 @@
 #!/usr/bin/groovy
 package com.cleverbuilder
 
-def bob(){retuen "docker run --rm " +
+def call(){
+         retuen "docker run --rm " +
          '--env APP_PATH="`pwd`" ' +
          '--env RELEASE=true ' +
          "-v \"`pwd`:`pwd`\" " +
