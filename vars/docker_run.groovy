@@ -2,7 +2,7 @@
 package com.cleverbuilder
 
 def bob() {
-  bob_cmd="docker run --rm " +
+  echo bob_cmd="docker run --rm " +
          '--env APP_PATH="`pwd`" ' +
          '--env RELEASE=true ' +
          "-v \"`pwd`:`pwd`\" " +
