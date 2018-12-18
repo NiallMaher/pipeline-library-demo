@@ -1,7 +1,9 @@
 def call() {
-    node {
-        stage('Checkout') {
-            checkout scm
+    agent {
+        node {
+            stage('Checkout') {
+                checkout scm
+            }
         }
 
         parameters {
