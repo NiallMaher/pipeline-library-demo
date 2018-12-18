@@ -1,12 +1,6 @@
 def call() {
-    agent {
-        node {
-            stage('Checkout') {
-                checkout scm
-            }
-        }
 
-        parameters {
+    parameters {
             string(name: 'SETTINGS_CONFIG_FILE_NAME', defaultValue: 'maven.settings.eso')
             string(name: 'BOB_VERSION', defaultValue: '1.4.0-8')
             string(name: 'SLAVE', defaultValue: 'so_slave')
