@@ -21,6 +21,8 @@ def call() {
     }
 
 def build_pipeline() {
+    pipeline {
+        
     stages {
         stage('Inject Settings.xml File') {
             steps {
@@ -83,4 +85,5 @@ def build_pipeline() {
             step([$class: 'JacocoPublisher'])
         }
     }
+}
 }
