@@ -19,7 +19,6 @@ def call() {
         build_pipeline()
 
     }
-}
 
 def build_pipeline() {
     stages {
