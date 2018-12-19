@@ -5,7 +5,7 @@ def call() {
 
 def build_pipeline() {
     node {
-        label params.SLAVE
+        label 'so_slave'
 
 
         parameters {
