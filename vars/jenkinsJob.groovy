@@ -4,6 +4,9 @@ def call() {
 }
 
 def build_pipeline() {
+    node {
+        label params.SLAVE
+    }
 
         parameters {
             string(name: 'SETTINGS_CONFIG_FILE_NAME', defaultValue: 'maven.settings.eso')
