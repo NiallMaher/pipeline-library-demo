@@ -1,9 +1,4 @@
-def call() {
-    // Execute build pipeline job
-    build_pipeline()
-}
-
-def build_pipeline() {
+pipeline {
     node {
         label 'so_slave'
     }
